@@ -282,7 +282,6 @@ namespace Lab08
 
             double[] x = lambdaList.ToArray();
 
-            // Сохраняем данные для графиков в CSV
             SaveCsv("result/p-1.csv", "Вероятность простоя P0", x, theorP0.ToArray(), expP0.ToArray());
             SaveCsv("result/p-2.csv", "Вероятность отказа Pn", x, theorPn.ToArray(), expPn.ToArray());
             SaveCsv("result/p-3.csv", "Относительная пропускная способность Q", x, theorQ.ToArray(), expQ.ToArray());
@@ -292,7 +291,6 @@ namespace Lab08
             Console.WriteLine("\nCSV файлы для графиков сохранены в папку result/");
             Console.WriteLine("Для построения графиков используйте Excel, Google Sheets или Python");
 
-            // Вывод таблицы результатов в консоль
             Console.WriteLine("\n=== РЕЗУЛЬТАТЫ ===");
             Console.WriteLine("λ\tP0(теор)\tP0(эксп)\tPотк(теор)\tPотк(эксп)\tQ(теор)\tQ(эксп)");
             Console.WriteLine("----------------------------------------------------------------");
